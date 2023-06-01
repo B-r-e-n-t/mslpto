@@ -8,28 +8,50 @@
     <title>MSL-PTO</title>
 </head>
 <body>
+
+    <section class="navigation">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+        </div>   
+        <button class="nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#contact-form" class="nav__link">Join Email List</a></li>
+                <li class="nav__item"><a href="#donate" class="nav__link">Donate</a></li>
+                <!-- <li class="nav__item"><a href="#contact-container" class="nav__link">Contact Us</a></li> -->
+            </ul>
+        </nav>
+    </section>
+
+
     <header class="hero-section">
-        <!-- <div class="line-break"></div> -->
+
+        <div class="line-break"></div>
         <h1>Montessori at LeMoyne</h1>
         <h2>Parent - Teacher Organization</h2>
-        <!-- <div class="line-break"></div> -->
-        <img class="hero-img" src="images/MSL.jpg" alt="">
+        <div class="line-break"></div>
     </header>
 
 
     <form>
         <h2 id="contact-form" class="form-title">Sign up below for email updates about events and ways to get involved at MSL!</h2>
+        <input type="hidden" name="access_key" value="ddac8188-5c74-4600-9c89-d8e15ec5b538">
         <label for="name">First Name</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="first-name" required>
 
         <label for="name">Last Name</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="last-name" required>
       
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
+
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
       
         <input type="submit" value="Submit">
-      </form>
+    </form>
 
       <section class="image-grid">
         <img src="images/grid1.jpeg" alt="Image 1">
@@ -41,8 +63,10 @@
         <!-- Add more image elements as needed -->
       </section>
 
-      <div class="donate">
-        <a href="#">Donate</a>
+      <div class="donate" id="donate">
+        <a href="https://venmo.com/u/MSL_Parent-Faculty-Org" target="_blank">Donate</a>
       </div>
+
+      <script src="script.js"></script>
 </body>
 </html>
