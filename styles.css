@@ -25,6 +25,20 @@ a {
     margin: auto;
 }
 
+.events-button {
+    background-color: rgba(104, 204, 244, 0.6);
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 8rem;
+    margin: auto;
+    margin-top: 3em;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
 
 
 
@@ -33,9 +47,9 @@ a {
 
 
 .logo {
-    width: 75px;
+    width: 100px;
     margin: auto;
-    padding: 10px 0px 10px 0px;
+    /* padding: 10px 0px 10px 0px; */
   }
   
   .nav {
@@ -162,9 +176,10 @@ a {
     .nav {
         position: relative;
         background-color: transparent;
-        color: var(--clr-white);
+        /* color: var(--clr-white); */
         transform: none;
         display: flex;
+        height: auto;
       }
   
       .navigation {
@@ -172,8 +187,8 @@ a {
         justify-content: space-between;
         /* width: 100%; */
         background-color: transparent;
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 75px;
+        padding-right: 75px;
       }
   
       .nav__list {
@@ -205,7 +220,7 @@ a {
   
       .logo {
         margin: 0;
-        width: 75px;
+        width: 100px;
       }
   }
 
@@ -341,13 +356,32 @@ form {
     font-size: 1.5rem;
   }
 
+
+  /* Upcoming Events */
+  .upcoming-events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+  }
+
+  .events-title {
+    font-size: 2rem;
+    padding: 1em;
+  }
+
+  .event-list-item {
+    font-size: 1.5rem;
+  }
+
   footer {
     display: flex;
     height: 5em;
     margin-top: 3em;
     align-items: center;
-    justify-content: space-between;
-    background-color: rgba(104, 204, 244, 0.9);
+    justify-content: space-around;
+    background-color: rgb(104, 204, 244);
     color: white;
     gap: 100px;
     padding: 25px;
